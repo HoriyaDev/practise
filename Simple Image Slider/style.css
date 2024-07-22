@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    height: 100vh;
+}
+
+.slider {
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.images {
+    display: flex;
+    transition: transform 0.5s ease;
+    border-radius: 30px;
+  
+}
+
+.images img {
+    min-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.inputs {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+ input {
+    display: none;
+}
+
+#img-1:checked ~ .images {
+    transform: translateX(0);
+}
+
+#img-2:checked ~ .images {
+    transform: translateX(-100%);
+}
+
+#img-3:checked ~ .images {
+    transform: translateX(-200%);
+}
+
+#img-4:checked ~ .images {
+    transform: translateX(-300%);
+}
+
+#img-5:checked ~ .images {
+    transform: translateX(-400%);
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dots label {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 0 5px;
+}
+
+.dots label:hover {
+    background-color: white;
+}
+@media only screen and (max-width:768px) {
+    .slider{
+        width:80vw;
+        
+    }
+    
+.images img{
+    width: 60vw;
+    height: 60vw;
+}
+
+    
+}

@@ -1,0 +1,202 @@
+*{
+   margin: 0;
+   padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#welcome-section{
+    background-color: black;
+   height: 100vh;
+
+} 
+
+#navbar{
+    background-color: brown;
+    position:fixed;
+    width: 100%; 
+    padding: 20px;
+    
+}
+#navbar ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+#navbar ul li a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 22px;
+}
+#navbar ul li a:hover{
+   background-color: blueviolet;
+}
+
+
+.page-1{
+    color: rgb(247, 238, 238);
+    text-align: center;
+  
+    
+}
+.page-1 h1{
+    padding-top: 20%;
+    font-size: 50px;
+    
+}
+.page-1 h3{
+   font-size: 35px;
+   padding: 10px;
+}
+#project-title{
+    color: blueviolet;
+    background-color: #45567D;
+}
+#title h1{
+    color: white;  
+    padding-top: 90px;
+    padding-bottom: 10px;
+    font-size: 45px;
+    border-bottom:2px solid white;
+    width: 45vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;    
+}
+#row-1{
+    display: flex;
+    gap: 40px;
+   margin-top: 70px;
+   margin-left: 35px; 
+}
+#row-2{
+    display: flex;
+    gap: 40px;
+   margin-top: 40px;
+   margin-left: 35px; 
+}
+ img{
+    height: 450px;
+    width: 400px;
+    cursor: pointer;
+}
+#caption{
+    width: 100%;
+    height: 15%;
+   
+    background-color: #303841;
+    margin-top: -5px;
+    text-align: center;
+    padding: 30px;
+   color: #303841;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+} 
+#caption:hover{
+    color: red;
+   
+}
+#btn button{
+    width: 9%;
+    height: 40px;
+    margin-top: 60px;
+    margin-left: 45%;
+    margin-bottom: 70px;
+    font-size: 20px;
+    background-color: #303841;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+
+}
+#btn button:hover{
+    background-color: brown;
+}
+#contact{
+    background-color: #303841;
+    height: 90vh;
+    color: white;
+}
+h1 {
+    font-size: 70px;
+    text-align: center;
+    padding-top: 120px;
+ 
+   
+   
+    
+}
+#description{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+   
+  
+  
+}
+#icons, #facebook , #github ,#twitter , #email , #phone{
+
+    display: flex;
+    font-size: 30px;
+   margin-top: 30px ;
+   margin-left: 40px;
+   gap: 10px;
+   cursor: pointer;
+   
+}
+#facebook{
+    margin-left: 200px;
+}
+#facebook:hover{
+    animation: bounce 2s linear;
+}
+#github:hover{
+    animation: bounce 2s linear;
+}
+#twitter:hover{
+    animation: bounce 2s linear;
+}
+#email:hover{
+    animation: bounce 2s linear;
+}
+#phone:hover{
+    animation: bounce 2s linear;
+}
+
+@keyframes bounce{
+    20% , 50% , 80% , to{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(10px);
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    margin-top:100px;
+    border-top: 3px solid brown;
+
+  
+
+}
+footer p{
+    margin-top: 60px;
+}
+@media screen  (min-width:){
+    
+}
+
+
+

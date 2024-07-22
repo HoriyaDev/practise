@@ -1,0 +1,158 @@
+/* Global Styles */
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3b3b4f;
+}
+
+.container {
+    width: 30vw; /* Adjusted to be flexible */
+    margin: auto;
+    margin-top: 5%;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+.black-screen {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    width: 250px; /* Fixed width */
+    padding: 10px;
+    border-radius: 15px;
+    height: 73vh;
+}
+
+.black-screen .camera {
+    width: 10px;
+    height: 10px;
+    background-color: #dfdfe2;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.white-screen {
+    margin-top: 10%;
+    height: 55vh;
+    width: 230px; /* Fixed width relative to black screen */
+    background-color: #dfdfe2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+
+#inputs {
+    margin-top: 10px;
+    margin-left: 7px;
+    width: 215px; /* Fixed width relative to white screen */
+    height: 6vh;
+    border-radius: 10px;
+    
+    font-size: 16px;
+    text-align: center;
+    
+}
+
+.buttons {
+    margin-top: 5%;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin-left: 4%;
+}
+
+#btn-1,
+#btn-2 {
+    width: 90px; /* Fixed width */
+    height: 5vh;
+    font-size: 18px;
+    background-color: #dfdfe2;
+    margin: 5px;
+}
+.results{
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -10px;
+    text-align: center;
+}
+
+/* Mobile Styles (max-width: 554px) */
+@media only screen and (max-width: 554px) {
+    
+
+    .container {
+       
+        width: 80vw; /* Flexible width for mobile */
+        height: 130vh;
+    }
+
+    .black-screen {
+        width: 230px; /* Fixed width */
+    }
+
+    .white-screen {
+        width: 200px; /* Fixed width */
+    }
+
+    #inputs {
+        width: 190px; /* Fixed width */
+    }
+
+    #btn-1,
+    #btn-2 {
+        width: 80px; /* Fixed width */
+        margin-left: 10px;
+    }
+}
+
+/* Tablet Styles (min-width: 555px and max-width: 768px) */
+@media only screen and (min-width: 555px) and (max-width: 768px) {
+    .container {
+        width: 120vw; /* Flexible width for laptop */
+        height: 60vh;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .black-screen {
+        width: 250px; /* Fixed width */
+        height: 48vh;
+    }
+
+    .white-screen {
+        width: 210px; 
+        height:35vh/* Fixed width */
+        
+    }
+
+    #inputs {
+        width: 200px; /* Fixed width */
+    }
+
+    #btn-1,
+    #btn-2 {
+        width: 100px; /* Fixed width */
+        margin-left: -8px;
+        margin-right: 15px;
+    }
+}
+

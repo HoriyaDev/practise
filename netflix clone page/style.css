@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+#heading p {
+    color: aquamarine;
+    font-size: 30px;
+    margin: 20px 0px 0px 40px;
+}
+.part-2{
+   
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.part-2 h1{
+    margin: 20px;
+    margin-left: 150px;
+}
+.inputs{
+ 
+    margin: 20px;
+    margin-left: 150px;
+   
+}
+#phone input  {
+     padding: 10px;
+     background-color: #333333;
+     margin-bottom: 20px;
+     width: 60%;
+     border-radius: 5px;
+     color: white;
+}
+#phone input::placeholder{
+  
+    font-size: 18px;
+    color: white;
+}
+#password input{
+    padding: 10px;
+    background-color: #333333;
+    margin-bottom: 20px;
+    width: 60%;
+    border-radius: 5px;
+    color: white;
+
+}
+#password input::placeholder{
+  
+    font-size: 18px;
+    color: white;
+}
+#btn-1 button{
+    width: 30%;
+    height: 40px;
+    background-color: #e50914;
+    margin-bottom: 10px;
+    width: 60%;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+
+}
+#or p{
+    color: #333333;
+    font-size: 20px;
+     margin-left: 125px;
+    margin-bottom: 10px;
+   
+}
+#btn-2 button{
+    width: 30%;
+    height: 40px;
+    background-color: #926767;
+    margin-bottom: 20px;
+    color: white;
+    width: 60%;
+    border-radius: 5px;
+    font-size: 18px;
+
+}
+#remember {
+    display: flex;
+
+}
+#remember p{
+margin: 5px;
+
+}
+#remember a{
+    color: #333333;
+    margin-left: 70px;
+}
+#sign-up{
+    margin-top: 20px;
+}
+#sign-up a{
+    color: white;
+    
+}
+
+footer{
+    margin-top: 20px;
+    font-size: 15px;
+}
+footer a{
+    color: #004a9b;
+}
+@media only screen and (min-width: 320px) and (max-width:554px){
+    .part-2{
+        width: 150vw;
+        margin-top: 100px;
+        margin-left: 60px;
+     
+        
+    }
+    .inputs{
+        width:170vw;
+    }
+    #or p{
+       color: aliceblue;
+      margin-left: 140px;
+    }
+
+    #remember a{
+        color: #e50914;
+        margin-left: 80px;
+    }
+   
+}
+@media only screen and (min-width: 554px) and (max-width:768px){
+    .part-2{
+        width: 150vw;
+        margin-top: 100px;
+        margin-left: 150px;
+        margin-right: -50px;
+        
+    }
+    #or p{
+        color: aliceblue;
+       margin-left: 190px;
+     }
+    #remember a{
+      color: #e50914;
+      margin-left: 350px;
+    }
+
+}
+
+

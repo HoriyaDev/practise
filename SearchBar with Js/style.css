@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+/* Table container styling */
+div table {
+    width: 90%;
+   
+    margin: auto;
+    border: 2px solid black;
+  
+    border-collapse: collapse;
+  }
+  
+  /* Heading row styling */
+  #myTable .heading {
+
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Table header cell styling */
+  #myTable th {
+    padding: 10px;
+    border-bottom: 2px solid red;
+  }
+  
+  /* Table data cell styling */
+  #myTable td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Table row styling */
+  #myTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  #myTable tr:hover {
+    background-color: #f1f1f1;
+  }
+  

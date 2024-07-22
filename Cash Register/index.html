@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Cash Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Cash Register</h1>
+        <div class="register">
+            <div class="items">
+                <input type="number" id="itemPrice" placeholder="Enter item price">
+                <button onclick="scanItem()">Add Item</button>
+            </div>
+            <div class="display">
+                <p id="totalDisplay">Total: $0.00</p>
+            </div>
+            <div class="payment">
+                <input type="number" id="paymentAmount" placeholder="Enter payment amount">
+                <button onclick="processPayment()">Process Payment</button>
+                <p id="messageDisplay"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

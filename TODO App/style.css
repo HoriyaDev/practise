@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(184, 174, 194);
+}
+
+.container {
+    
+    width: 50vw;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+}
+
+#input {
+    width: 70%;
+    height: 40px;
+    margin-left: 8%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+#input:focus{
+    outline: none;
+    border: 2px solid rgb(66, 46, 87);
+}
+
+button {
+    height: 40px;
+    width: 70px;
+    border: none;
+    border-radius:5px ;
+}
+button:hover{
+    background-color: lightblue;
+}
+
+#todo-task {
+    margin: 20px auto;
+    list-style: none;
+    font-size: 25px;
+}
+
+#todo-task li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    
+}
+
+#todo-task li .edit,
+#todo-task li .delete {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px; /* Adjust width as needed */
+    text-align: center;
+}
+
+#todo-task li .edit {
+    
+    right: 70px; /* Position edit button to the right of the list item */
+    color: red;
+    margin-right: 10px;
+}
+
+#todo-task li .delete {
+    right: 10px; /* Position delete button to the right side */
+}
+.save{
+    color: brown;
+   border: none;
+   font-size: 25px;
+
+}
+.save:focus{
+    outline: none;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+.container{
+    width: 100vw;
+}
+#todo {
+display: flex;
+gap: 10px;  
+}
+.save{
+    width: 50vw;
+    
+}
+.save:focus{
+   outline: none;
+}
+}
+
