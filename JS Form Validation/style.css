@@ -9,14 +9,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     }
     
     header {
     border-bottom: 2px solid black;
+    
     width: 100vw;
     text-align: end;
     height: 10vh;
     font-size: 30px;
+   
     }
     
     .head p {
@@ -33,6 +36,7 @@
    
     width: 70vw;
     margin-top: 0;
+
     }
     .links li{
     list-style: none;
@@ -43,11 +47,13 @@
     text-decoration: none;
     font-size: 20px;
 
-    margin-left: -50px;
+    margin-left: -90px;
+
+    color:#a09f9f;
     }
     .side-links {
-    background-color: aqua;
-    border: 2px solid orange;
+    background-color: black;
+   
     width: 30vw;
     height: 100vh;
     position: absolute;
@@ -81,16 +87,24 @@
     .circle {
     width: 25px;
     height: 25px;
-    background-color: beige;
+    background-color: #a09f9f;
     border-radius: 50%;
-    margin: 20px 0;
-    position: relative;
+    margin: 55px 0;
+  
     z-index: 1;
+    margin-left: 170px;
     
     }
     /* Add this to your style.css */
 .circle.active {
-    background-color: green; /* Change this color as needed */
+    background-color: white; /* Change this color as needed */
+}
+.step-text {
+    color: #a09f9f; /* Default color for step text */
+}
+
+.step-text.active {
+    color: white; /* Change this color as needed */
 }
 
     
@@ -98,17 +112,19 @@
     .step-2::after {
     content: '';
     width: 2px;
-    height: 60px;
-    background-color: black;
+    height: 105px;
+    background-color: #EEEEEE;
     position: absolute;
-    top: 25px;
-    left: 50%;
+    top: 83px;
+    left: 93%;
     transform: translateX(-50%);
     z-index: 0;
     }
     
     .step-2::after {
-    top: 25px;
+        top: 83px;
+    height: 105px;
+
     }
     
     .links {
@@ -123,7 +139,7 @@
     
     .personal-info , .contact-info , .security-info{
     
-    height: 90vh;
+    height: 70vh;
     width: 35vw;
     margin-left: auto;
     margin-right: auto;
@@ -138,11 +154,13 @@
     }
     #fname  , #lname , #country , #state , #passport , #license{
     
-    width: 15vw;
+    width: 16vw;
     margin-top: 5%;
-    height: 40px;
-    font-size: 20px;
+    height: 45px;
+    font-size: 18px;
     padding-left: 20px;
+    background-color: #EEEEEE;
+  
     
     }
     .address{
@@ -150,11 +168,12 @@
     flex-direction: column;   
     }
     #DOB , #email , #st-address , #phone , #sin-number{
-    height: 40px;
+    height: 45px;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 20px;
     width:32vw ;
+    background-color: #EEEEEE;
     }
     .personal-info p {
     
@@ -162,8 +181,10 @@
     margin-right: 10px;
     
     }
-    .security-info p{
-    color:red;
+    .form-id{
+       
+        margin-top: 20px;
+        margin-bottom: -20px;
     }
     .personal-info p a{
     font-weight: bold;
@@ -181,10 +202,14 @@
     color: white;
     }
     #personal-btn #btn-1 , #btn-2 , #btn-3{
-    height: 40px;
+    height: 45px;
     margin-top: 20px;
     width:32vw ;
     font-size: 15px;
+    cursor: pointer;
+    }
+    #btn-3{
+        background-color: white;
     }
     /*contact styling*/
     .contact-btn , .security-btn {
@@ -194,14 +219,14 @@
     .contact-btn .btn-1  , .security-btn .btn-1{
     color: red;
     width: 30vw;
-    height: 40px;
+    height: 45px;
     margin-top: 20px;
     font-size: 15px;
     background-color: black;
     color: white;
     }
     .contact-btn .btn-2 , .security-btn .btn-2{
-    color: red;
+    
     width: 80vw;
     height: 40px;
     margin-top: 50px;
@@ -221,6 +246,70 @@
         text-align: center;
        
 
+    } 
+
+@media screen and (max-width:768px){
+   header{
+   
+    width: 170vw;
+   }
+   .side-links{
+    width: 150px;
+    height: 650px;
+    margin-bottom: 120px;
+   }
+   .step-text{
+    margin-left: -80px;
+   }
+   .circle{
+    margin-right: 80px;
+   }
+   .step-1::after,
+.step-2::after{
+    left: 183px;
+}
+
+    .personal-info, .contact-info, .security-info{
+        width: 250px;
+        margin-left: 200px;
+        height: 550px;
+        margin-top: 30%;
+     
     }
-    /* Hide all sections by default except the first one */
+    #fname,
+#lname,
+#country,
+#state,
+#passport,
+#license,#DOB,
+#email,
+#st-address,
+#phone,
+#sin-number{
+    width: 250px;
+}
+.personal-btn .btn-2{
+    width:250px ;
+}
+.contact-btn .btn-1, .security-btn .btn-1{
+    width: 100px;
+}
+.contact-btn .btn-2, .security-btn .btn-2{
+    width: 100px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+#btn-3{
+    width: 250px;
+}
+.submit{
+    text-align: center;
+   margin-top: 90%;
+    margin-left: 80%;
+    width: 80vw;
+    border: 2px solid black;
+}
+
+
     
+}

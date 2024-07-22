@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     const circles = document.querySelectorAll('.circle');
+    const stepTexts = document.querySelectorAll('.step-text')
     let currentSectionIndex = 0;
-    const firstName= document.getElementById("fname")
-    const lastName = document.getElementById("lname")
+    
 
     // Function to show the current section
     const showSection = (index) => {
@@ -15,14 +15,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 circle.classList.add('active');
             } else {
                 circle.classList.remove('active');
-            }
-            
-                
-          
+            } 
             
         });
+        stepTexts.forEach((stepText, i) => {
+            if (i === index) {
+                stepText.classList.add('active');
+            } else {
+                stepText.classList.remove('active');
+            }
+        });
 
-        // Change Continue button to Submit button on the last section
+        
+
+        
         
 
    
