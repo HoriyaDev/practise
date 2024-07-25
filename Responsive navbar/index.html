@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+   <main>
+    <div> 
+       <h1 class="text-red-500 font-medium text-3xl text-center mt-10">RESPONSIVE NAVBAR</h1>
+    </div>
+    <section class="border-black border-2 container mx-auto md:container md:mx-auto sm:container sm:mx-auto mt-20 flex flex-row items-center justify-between p-4 w-100">
+        <div class="text-xl font-bold">Waterdrop</div>
+        <nav class="">
+            <ul class="flex space-x-14">
+                <li><a class="text-black" href="#" >About</a>
+                    
+                
+                </li>
+                <li><a class="text-black" href="#">Projects</a></li>
+                <li><a class="text-black" href="#">Insights</a></li>
+                <li><a class="text-black" href="#" id="location-link">Locations</a>
+                    <ul class="hidden absolute  mt-1 border border-gray-300 bg-white shadow-lg   sm:w-20 md:w-40" id="location-menu">
+                        <li><a class="text-black block px-4 py-2 hover:bg-gray-200" href="#">Pakistan</a></li>
+                        <li><a class="text-black block px-4 py-2 hover:bg-gray-200" href="#">India</a></li>
+                        <li><a class="text-black block px-4 py-2 hover:bg-gray-200" href="#">Dubai</a></li>
+                    </ul>
+                
+                </li>
+            </ul>
+        </nav>
+        <div class="flex space-x-4">
+            <button class="bg-blue-400 text-white px-4 py-2 rounded">Sign in</button>
+            <button class="bg-orange-500 text-white px-4 py-2 rounded">Sign up</button>
+        </div>
+        
+    </section>
+   </main>
+   <script src="script.js"></script>
+</body>
+</html>
+
