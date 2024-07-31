@@ -747,13 +747,16 @@ video {
   }
  
 }
-@media (min-width: 768px) and (max-width: 1024px){
-  
+@media  (max-width: 768px){
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+   
+  }
   ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap:35px;
+    gap:20px;
    ;
   }
   #btn{
@@ -766,20 +769,8 @@ video {
 
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .mobile\:mx-20 {
-    /* margin-left: 5rem;
-    margin-right: 5rem; */
-  }
-
-  .mobile\:mt-64 {
-    /* margin-top: 16rem; */
-  }
-
-  .mobile\:mt-10 {
-    /* margin-top: 2.5rem; */
-  }
-
+@media (max-width: 640px) {
+  
   .mobile\:block {
     display: block;
   }
@@ -793,17 +784,22 @@ video {
     border: 2px solid black;
     border-radius: 5px;
     font-size: 35px;
-    margin-left: -20px;
-    margin-right: -15px;
+    width: 100vw;
+    margin-left: -18px;
+
+    
+    margin-top: 8%;
+    height: auto;
   }
   
   #home-menu, #about-menu, #project-menu, #contact-menu {
     margin-top: 30px;
-    padding: 10px 0; /* Add padding instead of changing height */
+   padding: 10px 0;
   }
   
   #home-menu:hover, #about-menu:hover, #project-menu:hover, #contact-menu:hover {
     background-color: #9ca3af;
+    
     
   }
   
