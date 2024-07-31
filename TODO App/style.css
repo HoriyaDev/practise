@@ -49,10 +49,9 @@ button:hover{
 
 .text-area {
     width: 50vw;
-    display: flex;
-    align-items: center;
+    
     border: 1px solid #ccc;
-    padding: 10px;
+   
     margin-bottom: 10px;
     position: relative;
     height: auto;
@@ -63,19 +62,36 @@ button:hover{
     font-size: 20px;
     flex-grow: 1;
     margin-right: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 .time {
     font-size: 14px;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
-.editBtn, .deleteBtn {
-    padding: 5px 10px;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: rgb(193, 196, 196);
+  
+
+.editBtn{
+    color: red;
+    margin-left: 30%;
+    width: 100px;
+    border: 2px solid red;
+    border-radius: 50px;
+    font-size: 15px;   
+    cursor: pointer; 
+    margin-top: 20px;
+}
+.deleteBtn{
+   background-color: red;
+   color: white;
+   cursor: pointer; 
+   border-radius: 50px;
+   width: 100px;
+   margin-left: 20px;
+   
 }
 
 button {
@@ -99,7 +115,7 @@ gap: 10px;
     width: 80vw;
     margin-left: 20px;
     position: relative;
-    display: flex;
+    
 }
 .time{
     position: absolute;
@@ -113,6 +129,7 @@ gap: 10px;
 }
 .editBtn{
     margin-left: 50px;
+    width: 80px;
 }
 
 .save{
