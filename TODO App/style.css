@@ -42,53 +42,50 @@ button {
 button:hover{
     background-color: lightblue;
 }
-
-#todo-task {
-    margin: 20px auto;
-    list-style: none;
-    font-size: 25px;
+.btn-1{
+    margin-left:80%;
+    background-color: aqua;
 }
 
-#todo-task li {
-    position: relative;
+.text-area {
+    width: 50vw;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: white;
-    border: 1px solid lightgray;
-    
+    position: relative;
+    height: auto;
+    background-color: rgb(238, 235, 235);
 }
 
-#todo-task li .edit,
-#todo-task li .delete {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 60px; /* Adjust width as needed */
-    text-align: center;
+.text {
+    font-size: 20px;
+    flex-grow: 1;
+    margin-right: 20px;
 }
 
-#todo-task li .edit {
-    
-    right: 70px; /* Position edit button to the right of the list item */
-    color: red;
+.time {
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.editBtn, .deleteBtn {
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
     margin-right: 10px;
+    background-color: rgb(193, 196, 196);
 }
 
-#todo-task li .delete {
-    right: 10px; /* Position delete button to the right side */
+button {
+    padding: 5px 10px;
+    cursor: pointer;
 }
-.save{
-    color: brown;
-   border: none;
-   font-size: 25px;
 
-}
-.save:focus{
-    outline: none;
-}
+
+
+
 
 @media only screen and (min-width:320px) and (max-width:768px) {
 .container{
