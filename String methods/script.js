@@ -1,4 +1,5 @@
 const inputField = document.getElementById("input")
+const replaceField = document.getElementById("replace-input")
 const numberField = document.getElementById("number")
 const secondField = document.getElementById("index")
 const lengthBtn = document.getElementById("length")
@@ -20,6 +21,29 @@ const templateBtn = document.getElementById("template")
 const vowelBtn = document.getElementById("vowel")
 const removeBtn = document.getElementById("remove")
 const subStringBtn = document.getElementById("sub-string")
+const replaceBtn1 = document.getElementById("replace")
+const replaceBtn2 = document.getElementById("replace2")
+
+replaceBtn1.addEventListener("click" , ()=>{
+    const input = inputField.value
+    const word = replaceField.value
+    const replaceWord = input.replaceAll(word,"REDACTED");
+    showDiv.innerHTML= replaceWord
+})
+replaceBtn2.addEventListener("click" , ()=>{
+    // const input = inputField.value
+    // const word = replaceField.value.split('').join(",")
+    // console.log(word)
+    // const replaceWord = input.replaceAll(/word/i,"*****");
+    // showDiv.innerHTML= replaceWord
+
+    const input = inputField.value;
+    const wordsToCensor = replaceField.value.split(',') 
+    const regex = new RegExp(wordsToCensor.join('|'), 'gi');
+    const replaceWord = input.replace(regex, '*****');
+    showDiv.innerHTML = replaceWord;
+})
+
 
 subStringBtn.addEventListener("click" , ()=>{
     const word = inputField.value;
