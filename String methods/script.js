@@ -1,5 +1,6 @@
 const inputField = document.getElementById("input")
 const numberField = document.getElementById("number")
+const secondField = document.getElementById("index")
 const lengthBtn = document.getElementById("length")
 const showDiv = document.getElementById("show")
 const unicodeBtn = document.getElementById("unicode")
@@ -18,6 +19,24 @@ const uperCaseBtn = document.getElementById("uper-case")
 const templateBtn = document.getElementById("template")
 const vowelBtn = document.getElementById("vowel")
 const removeBtn = document.getElementById("remove")
+const subStringBtn = document.getElementById("sub-string")
+
+subStringBtn.addEventListener("click" , ()=>{
+    const word = inputField.value;
+    const firstIndex = parseInt(numberField.value)
+    const secIndex = parseInt(secondField.value)
+    console.log(word,firstIndex , secIndex)
+    const partOne  = word.substring(0, firstIndex)
+    console.log(partOne)
+    const partTwo = word.substring(secIndex+1)
+    console.log(partTwo)
+    const betweenIndices = word.substring(firstIndex, secIndex + 1);
+    console.log(betweenIndices);
+    const result = partTwo+betweenIndices+partOne
+    showDiv.innerHTML=result
+    
+})
+
 
 removeBtn.addEventListener("click", ()=>{
    const word  = inputField.value
