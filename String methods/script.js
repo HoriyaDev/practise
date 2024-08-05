@@ -23,6 +23,34 @@ const removeBtn = document.getElementById("remove")
 const subStringBtn = document.getElementById("sub-string")
 const replaceBtn1 = document.getElementById("replace")
 const replaceBtn2 = document.getElementById("replace2")
+const indexOfBtn = document.getElementById("index-of")
+
+// indexOfBtn.addEventListener("click" , ()=>{
+//     const input = inputField.value;
+//     const word = replaceField.value
+//     const result = input.indexOf(word)
+//     showDiv.innerHTML = result
+// })
+
+indexOfBtn.addEventListener("click", () => {
+    const input = inputField.value;
+    const word = replaceField.value;  
+    function countOccurrences(str, searchTerm) {
+        let count = 0;
+        let pos = str.indexOf(searchTerm);
+
+        while (pos !== -1) {
+            count++;
+            pos = str.indexOf(searchTerm, pos + 1);
+        }
+
+        return count;
+    }  
+    const result = countOccurrences(input, word)
+    showDiv.innerHTML = `Occurrences: ${result}`;
+});
+
+
 
 replaceBtn1.addEventListener("click" , ()=>{
     const input = inputField.value
