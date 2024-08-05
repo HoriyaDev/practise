@@ -24,6 +24,26 @@ const subStringBtn = document.getElementById("sub-string")
 const replaceBtn1 = document.getElementById("replace")
 const replaceBtn2 = document.getElementById("replace2")
 const indexOfBtn = document.getElementById("index-of")
+const endWithBtn = document.getElementById("end-with")
+const startWithBtn = document.getElementById("start-with")
+// startWithBtn.addEventListener("click" , ()=>{
+//     const input = inputField.value
+//     const suffixWord = replaceField.value
+//     const stringLength = parseInt(numberField.value)
+//     const result  = input.endsWith(suffixWord, stringLength)
+//     showDiv.innerHTML=result
+// })
+
+endWithBtn.addEventListener("click", () => {
+    const input = inputField.value;
+    const suffixWord = replaceField.value;
+    const stringLength = parseInt(numberField.value, 10);
+    const truncatedString = isNaN(stringLength) ? input : input.slice(0, stringLength);
+    const result = truncatedString.endsWith(suffixWord);
+    showDiv.innerHTML = result;
+});
+
+
 
 // indexOfBtn.addEventListener("click" , ()=>{
 //     const input = inputField.value;
