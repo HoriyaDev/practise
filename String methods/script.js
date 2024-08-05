@@ -17,11 +17,19 @@ const lowerCaseBtn = document.getElementById("lower-case")
 const uperCaseBtn = document.getElementById("uper-case")
 const templateBtn = document.getElementById("template")
 const vowelBtn = document.getElementById("vowel")
-const replaceBtn = document.getElementById("replace")
+const removeBtn = document.getElementById("remove")
 
-replaceBtn.addEventListener("click", ()=>{
+removeBtn.addEventListener("click", ()=>{
    const word  = inputField.value
-   const replaceWord = word.replace
+  const wordLength = Math.floor(word.length/3)
+  console.log(wordLength)
+  const firstPart = wordLength 
+  const lastPart  = word.length-wordLength
+  
+  const result = word.slice(0, firstPart) + word.slice(lastPart);
+  console.log(firstPart , lastPart)
+  showDiv.innerHTML=result
+
 })
 
 
