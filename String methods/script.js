@@ -54,10 +54,11 @@ function checkString(string , word , booleanCheck){
 //     const result  = input.endsWith(suffixWord, stringLength)
 //     showDiv.innerHTML=result
 // })
+
 startWithBtn.addEventListener("click" , ()=>{
     const input = inputField.value;
     const prefixWord = replaceField.value;
-    const stringLength = parseInt(numberField.value, 10);
+    const stringLength = parseInt(numberField.value);
     const truncatedString = isNaN(stringLength) ? input : input.slice(0, stringLength);  
     const result = truncatedString.startsWith(prefixWord);    
     showDiv.innerHTML = result;
@@ -67,7 +68,7 @@ startWithBtn.addEventListener("click" , ()=>{
 endWithBtn.addEventListener("click" , ()=>{
     const input = inputField.value;
     const suffixWord = replaceField.value;
-    const stringLength = parseInt(numberField.value, 10);
+    const stringLength = parseInt(numberField.value);
 
     
     const truncatedString = isNaN(stringLength) ? input : input.slice(0, stringLength);
@@ -265,9 +266,13 @@ stringBtn.addEventListener("click" , ()=>{
 indexBtn.addEventListener("click" , ()=>{
     const word = inputField.value
     const targertIndex = parseInt(numberField.value);
+    console.log("word.length>=targertIndex  ",word.length>=targertIndex)
     if(word.length>=targertIndex){
+        console.log(word.length>=targertIndex)
         const char = word.charAt(targertIndex)
+       
         showDiv.innerHTML=`[${char}]`
+
 
     }
     else{
@@ -362,7 +367,9 @@ padendBtn.addEventListener("click", () => {
         const paddedWord = word.padEnd(targetNumber, ".");
         showDiv.innerHTML = paddedWord;
         console.log(paddedWord);
+
     } 
+   
 });
 
 
@@ -371,18 +378,20 @@ lengthBtn.addEventListener("click" , ()=>{
     showDiv.innerHTML= word
 })
 unicodeBtn.addEventListener("click" , ()=>{
-    // const word = inputField.value.split('').join(",")
-    // for(let i = 0;i<word.length;i++){
+    // const word = inputField.value
+    // // for(let i = 0;i<word.length;i++){
     //     const code = word.charCodeAt(i)
     //     showDiv.innerHTML= code
-    // }
+    // // }
     const Array = [];
     const word = inputField.value
      for(let i = 0;i<word.length;i++){
          const code = word.charCodeAt(i)
+         console.log(code)
         Array.push(code);
+        console.log(Array)
     }
-    showDiv.innerHTML = unicodeArray.join(", ");
+    // showDiv.innerHTML = unicodeArray.join(", ");
 })
 capitalBtn.addEventListener("click" , ()=>{
     let result = " "
