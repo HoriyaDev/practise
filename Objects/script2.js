@@ -22,4 +22,11 @@ const obj1 = {
 const access = obj1.item
 console.log(access)
 
+//string to object
 
+let text = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+const obj = JSON.parse(text);
+console.log(obj)
