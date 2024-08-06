@@ -30,3 +30,5 @@ let text = '{ "employees" : [' +
 '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
 const obj = JSON.parse(text);
 console.log(obj)
+
+
