@@ -26,8 +26,25 @@ const replaceBtn2 = document.getElementById("replace2")
 const indexOfBtn = document.getElementById("index-of")
 const endWithBtn = document.getElementById("end-with")
 const startWithBtn = document.getElementById("start-with")
+const booleanBtn = document.getElementById("boolean")
+const checkboxBtn = document.getElementById("checkbox")
 
+booleanBtn.addEventListener("click" , ()=>{
+    const string  = inputField.value;
+    const word = replaceField.value
+    const booleanCheck = checkboxBtn.value
 
+    const result = checkString(string , word , booleanCheck)
+    showDiv.innerHTML = result ? "Match found!" : "No match found.";
+})
+
+function checkString(string , word , booleanCheck){
+      if(booleanCheck){
+        return string.toLowerCase().includes(word.toLowerCase())
+      }else{
+        return string.includes(word)
+      }
+}
 
 
 // startWithBtn.addEventListener("click" , ()=>{
