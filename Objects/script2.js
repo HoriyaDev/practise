@@ -77,3 +77,12 @@ const obj9 = {
 }
 const keys = Object.keys(obj9)
 console.log("Keys of an Object are" , keys )
+
+// getting values
+const obj10 = {
+    item : "bike", 
+    color: "red", 
+    number:"32213"
+}
+const values = Object.values(obj9)
+console.log("values of an Object are" , values )
