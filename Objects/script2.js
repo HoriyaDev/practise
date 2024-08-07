@@ -30,5 +30,13 @@ let text = '{ "employees" : [' +
 '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
 const obj = JSON.parse(text);
 console.log(obj)
+//object into string
+const obj4 = {
+    item : "bike", 
+    color: "red", 
+    number:"32213"
+}
 
+const string = JSON.stringify(obj4)
+console.log(string)
 
