@@ -39,4 +39,22 @@ const obj4 = {
 
 const string = JSON.stringify(obj4)
 console.log(string)
+// using object.entries
 
+const obj5 = {
+    item : "bike", 
+    color: "red", 
+    number:"32213"
+}
+const object6 = {
+    lead: "naveed",
+    mode:"strict"
+}
+const object7 = {
+    name : "pakistan",
+    id:"44"
+}
+
+
+const merger = Object.assign(obj5 , object6 , object7)
+console.log(merger)
