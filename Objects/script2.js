@@ -58,3 +58,22 @@ const object7 = {
 
 const merger = Object.assign(obj5 , object6 , object7)
 console.log(merger)
+
+// iterate over key/values pair
+
+const obj8 = {
+    item : "bike", 
+    color: "red", 
+    number:"32213"
+}
+const results  = Object.entries(obj8)
+console.log("key/values" , results)
+
+//getting keys 
+const obj9 = {
+    item : "bike", 
+    color: "red", 
+    number:"32213"
+}
+const keys = Object.keys(obj9)
+console.log("Keys of an Object are" , keys )
