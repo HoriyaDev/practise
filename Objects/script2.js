@@ -9,7 +9,7 @@ const object2 = {
     id:"44"
 }
 const merge = Object.assign(object1 , object2)
-console.log(merge)
+console.log("merge two objects into one" , merge)
 
 // accessing properties
  
@@ -20,7 +20,7 @@ const obj1 = {
 }
 
 const access = obj1.item
-console.log(access)
+console.log("accessing the values dynamically" , access)
 
 //string to object
 
@@ -29,7 +29,7 @@ let text = '{ "employees" : [' +
 '{ "firstName":"Anna" , "lastName":"Smith" },' +
 '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
 const obj = JSON.parse(text);
-console.log(obj)
+console.log("converting JSON string into object" , obj)
 //object into string
 const obj4 = {
     item : "bike", 
@@ -38,7 +38,7 @@ const obj4 = {
 }
 
 const string = JSON.stringify(obj4)
-console.log(string)
+console.log("converting Object into JSON string" , string)
 // using object.entries
 
 const obj5 = {
@@ -57,7 +57,7 @@ const object7 = {
 
 
 const merger = Object.assign(obj5 , object6 , object7)
-console.log(merger)
+console.log("Merge two objects into target object" , merger)
 
 // iterate over key/values pair
 
